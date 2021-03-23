@@ -2,17 +2,25 @@
 /* Wrapper */
 #page-nav {
   width: 100%;
-  background: #fff;
-  /* If you want the navigation bar to stick on top
-  position: sticky;
-  top: 0;
-  */
+  background-color: rgb(112,23,45);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; 
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+
 }
 
-/* Hide Hamburger */
-#page-nav label,
-#hamburger {
-  display: none;
+#logo{
+display: flex;
+
+}
+
+#logo img{
+  margin-right: 20px;
 }
 
 /* Menu Items */
@@ -27,43 +35,16 @@
   padding: 10px;
 }
 #page-nav ul li a {
-  color: gray;
+  color:white;
   text-decoration: none;
-  /*  display: flex;*/
+  font-size: 20px;
+  font-family: sans-serif;
+
 }
 
-/* [ON SMALL SCREENS] */
-@media screen and (max-width: 768px) {
-  /* Show Hamburger */
-  #page-nav label {
-    display: inline-block;
-    color: white;
-    background: #a02620;
-    font-style: normal;
-    font-size: 1.2em;
-    padding: 10px;
-  }
 
-  /* Break down menu items into vertical */
-  #page-nav ul li {
-    display: block;
-    background-color: #333;
-    opacity: 0.5;
-  }
-  #page-nav ul li {
-    border-top: 1px solid black;
-  }
 
-  /* Toggle show/hide menu on checkbox click */
-  #page-nav ul {
-    display: none;
-  }
-  #page-nav input:checked ~ ul {
-    display: block;
-  }
-}
-
-/* [DOES NOT MATTER] */
+/* [NORMALIZATION] */
 html,
 body {
   padding: 0;
